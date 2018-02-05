@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      
+       
+ <div id="1" onclick="id1()"></div><div id="2" onclick="id2()" ></div><div id="3" onclick="id3()"></div><div id="4" onclick="id4()"></div><div id="5" onclick="id5()"></div><br>  
+        <div id="6" onclick="id6()"></div><div id="7" onclick="id7()"></div><div id="8" onclick="id8()"></div><div id="9" onclick="id9()"></div><div id="10" onclick="id10()"></div><br>
+        <div id="11" onclick="id11()"></div><div id="12" onclick="id12()"> </div><div id="13" onclick="id13()"></div><div id="14" onclick="id14()"></div><div id="15" onclick="id15()"></div><br>
+        <div id="16" onclick="id16()"></div><div id="17" onclick="id17()"></div><div id="18" onclick="id18()"></div><div id="19" onclick="id19()"></div><div id="20" onclick="id20()"></div><br>
+        <div id="21" onclick="id21()"></div><div id="22" onclick="id22()"></div><div id="23" onclick="id23()"></div><div id="24" onclick="id24()"></div><div id="25" onclick="id25()"></div><br>   
+    
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+        <script src="../sketch.js"></script>
+        <script>
+ var newInput;
+            var playerInput= "";
+            
+                function id1(){
+                    playerInput = "1";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id2(){
+                    playerInput = "2";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                    
+                }
+                function id3(){
+                    playerInput = "3";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id4(){
+                    playerInput = "4";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id5(){
+                    playerInput = "5";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id6(){
+                    playerInput = "6";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id7(){
+                    playerInput = "7";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id8(){
+                    playerInput = "8";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id9(){
+                    playerInput = "9";
+                     newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id10(){
+                    playerInput = "10";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id11(){
+                    playerInput = "11";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id12(){
+                    playerInput = "12";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id13(){
+                    playerInput = "13";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id14(){
+                    playerInput = "14";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id15(){
+                    playerInput = "15";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id16(){
+                    playerInput = "16";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id17(){
+                    playerInput = "17";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id18(){
+                    playerInput = "18";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id19(){
+                    playerInput = "19";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id20(){
+                    playerInput = "20";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id21(){
+                    playerInput = "21";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id22(){
+                    playerInput = "22";
+                                        newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id23(){
+                    playerInput = "23";
+                                    newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id24(){
+                    playerInput = "24";
+                    newInput = playerInput;
+                    console.log(newInput);
+                }
+                function id25(){
+                    playerInput = "25";
+                    newInput = playerInput;
+                    console.log(newInput);                
+                }
+
+            var newInput = playerInput;
+               
+
+            function rand(){      //Returns a random number between 0 and defined limit.
+                return Math.floor(Math.random()*25) + 1; }
+
+           
+            var randReturn = rand();
+            var shipValue = randReturn.toString();
+            console.log(shipValue);
+            console.log(newInput);
+
+                 var incColor = 'rgba(231, 76, 60,1.0)';
+            var corColor = 'rgba(46, 204, 113,1.0)';
+let divs = document.querySelectorAll("div[id]");
+  for (let div of divs) {
+    div.addEventListener("click", displayDate);
+  }
+
+  function displayDate() {
+      if (newInput == shipValue) {
+        this.style.backgroundColor = corColor;
+      }
+      else {
+        this.style.backgroundColor = incColor;
+      }
+    
+  }
+</script>
+    </body>
+</html>

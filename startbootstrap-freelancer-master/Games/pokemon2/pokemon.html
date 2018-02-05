@@ -1,0 +1,28 @@
+<html>
+	<head>
+  	<link rel="stylesheet" type="text/css" href="pokemon.css">
+		<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="box health">
+			<div id="opponent"></div><br>
+			<div id="mine"></div>
+		</div><br><br>
+        <div class="box console" id="console">
+			<h3 class="element" id="app"></h3>
+        </div>
+		<div class="box" id="movesBox">
+		<br>
+      <div class="moves" onclick="movesOne()" id="1"><a>Thunderbolt</a></div>
+      <div class="moves" onclick="movesTwo()" id="2"><a>Static</a></div><br>
+      <div class="moves" onclick="movesThree()" id="3"><a>Agility</a></div>
+      <div class="moves" onclick="movesFour()" id="4"><a>Tail Whap</a></div>
+		</div>
+	
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+	  <script src="p5.collide2d.min.js"></script>
+      <script src="pokemon.js"></script>
+	</body>
+</html>

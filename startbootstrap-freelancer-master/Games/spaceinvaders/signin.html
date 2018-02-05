@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UFT-8">
+	<title>Tic Tac Toe</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="248279449312-tk09kir2vsli9q1copadfn27toankiud.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="toe.js"></script>
+    <link rel="stylesheet" href="tac.css">
+
+    
+
+</head>
+<body>
+   
+   <h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUiX6LW5Dp_cum9dsdg5SHmOFElT0C1bs&callback=myMap"></script>
+    
+    	<footer class="container">Made by <a>The Single Geyser</a><footer>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" onclick="location.href='space.html'"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+      </script>
+</body>
+</html>

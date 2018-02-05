@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel= "stylesheet"href="Rps.css" >
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAAot9mJ2qSiLHdkHVzqGl1gy2yXnyo6yI",
+        authDomain: "rock-paper-scissors-7c923.firebaseapp.com",
+        databaseURL: "https://rock-paper-scissors-7c923.firebaseio.com",
+        projectId: "rock-paper-scissors-7c923",
+        storageBucket: "",
+        messagingSenderId: "780060066961"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="rps.js"></script>
+    <!-- Jquery Reference -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Sedgwick+Ave+Display" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1>Let's Play Rock Paper Scissors!</h1>
+               <button onclick="playerRock()">Rock</button>
+               <button onclick="playerPaper()">Paper</button>
+               <button onclick="playerScissors()">Scissor</button>
+    </header> 
+    <p id="computerChoice">  </p>
+    <p id="result">  </p>
+
+<div>
+    <p id="logoTag">by Darrell</p>
+</div>
+</body>
+</html>
+
